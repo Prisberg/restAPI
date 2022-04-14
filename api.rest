@@ -1,0 +1,33 @@
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/api/inventory
+
+###
+
+POST http://localhost:3000/api/inventory
+Content-Type: application/json
+
+{
+    "name": "Filet mignon",
+    "use": "Yum",
+    "damage": "-33"
+}
+
+###
+
+PUT http://localhost:3000/api/inventory/1
+Content-Type: application/json
+
+{
+    "name": "Shrek 4",
+    "damage": "106"
+}
+
+###
+
+DELETE http://localhost:3000/api/inventory/1
+
+###
+
