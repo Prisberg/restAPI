@@ -1,10 +1,8 @@
-const express = require('express');
-const { send } = require('express/lib/response');
+import express from 'express';
 const app = express();
 
 app.use(express.json());
 
-//the database
 const inventory = [
     {
         id: 1,
@@ -31,7 +29,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/inventory', (req, res) => {
-    //insert database
     res.send(inventory);
 });
 
