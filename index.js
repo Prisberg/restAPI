@@ -38,8 +38,9 @@ app.post('/api/inventory', (req, res) => {
         return;
     }
 
+    
     const item = {
-        id: inventory.length + 1,
+        id: inventory[inventory.length - 1].id + 1,
         name: req.body.name,
         use: req.body.use,
         damage: req.body.damage

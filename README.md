@@ -15,6 +15,6 @@ This rest-api handles data relating to an inventory list.
 ## Build Instruction
 Run `npm i`.
 
-Run `nodemon index.js`.
+Run `npm start`.
 
 Use the endpoints in the .rest file.
